@@ -1,0 +1,22 @@
+<div class="layout-wrapper">
+  <div class="selector-wrapper">
+    <mat-chip-listbox [(ngModel)]="selectedTopic" (change)="updateSelectedTopic($event.value)">
+      <mat-chip-option color="accent" *ngFor="let option of topics" [value]="option.value"
+        [selectable]="option.value != selectedTopic" [disabled]="option.disabled">{{option.value}}</mat-chip-option>
+    </mat-chip-listbox>
+  </div>
+  <div class="quiz-wrapper" *ngIf="selectedTopic">
+    <div class="body">
+      <app-quiz-questions [allQuestions]="allQuestions" [topicQuestions$]="topicQuestionsSubject"
+        [selectedTopic]="selectedTopic"></app-quiz-questions>
+      <app-quiz-steps [topicQuestions$]="topicQuestionsSubject" [selectedTopic]="selectedTopic"></app-quiz-steps>
+    </div>
+    <div class="footer">
+      <button mat-stroked-button (click)="submitTopic()"
+        [disabled]="(isLastTopic | disableButton:isTopicCompleted: quizSubmitButtons.submitTopic)">Submit Topic</button>
+      <button mat-stroked-button (click)="submitTopicAndSave()"
+        [disabled]="(isLastTopic | disableButton:isTopicCompleted:quizSubmitButtons.submitAll)">Submit All and
+        Save</button>
+    </div>
+  </div>
+</div>

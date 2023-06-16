@@ -1,0 +1,5 @@
+<mat-vertical-stepper [selectedIndex]="currentQuestion" #stepper [linear]="false" (selectionChange)="updateCurrentQuestion($event)">
+    <mat-step [state]="'3'" *ngFor="let question of (topicQuestions$ | async)?.questions; let i = index">
+        <ng-template matStepLabel>{{question.headline}}</ng-template>
+    </mat-step>
+</mat-vertical-stepper>

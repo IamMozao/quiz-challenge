@@ -1,0 +1,30 @@
+.page-wrapper {
+    width: 100%;
+    padding: 5rem 2rem 2rem;
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: auto;
+    background: linear-gradient(2deg, #00ccbe, #f26f79);
+    background-size: 400% 400%;
+
+    -webkit-animation: BackgroundAnimation 15s ease infinite;
+    -moz-animation: BackgroundAnimation 15s ease infinite;
+    animation: BackgroundAnimation 15s ease infinite;
+}
+
+
+@-webkit-keyframes BackgroundAnimation {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+@-moz-keyframes BackgroundAnimation {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+@keyframes BackgroundAnimation {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}

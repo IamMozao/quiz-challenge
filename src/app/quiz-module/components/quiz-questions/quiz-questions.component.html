@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{(topicQuestions$ | async)?.topicName}}</mat-card-title>
+    </mat-card-header>
+    <br>
+    <mat-card-content>
+        <div class="question-wrapper">
+            <ng-container [ngTemplateOutlet]="questionPanel"
+            [ngTemplateOutletContext]="{question: (topicQuestions$ | async)?.questions![currentQuestion]}"></ng-container>
+        </div>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-button color="primary" [disabled]="currentQuestion == 0" (click)="updateCurrentQuestion('previous')">Previous</button>
+        <button mat-button color="primary" [disabled]="currentQuestion == ((topicQuestions$ | async)?.questions!.length - 1)" (click)="updateCurrentQuestion('next')">Next</button>
+    </mat-card-actions>
+</mat-card>
+
+<ng-template #questionPanel let-question="question">
+    <p>{{question?.headline}}</p>
+    <mat-divider></mat-divider>
+    <mat-radio-group aria-label="Select an answer" [value]="question?.selectedAnwswer" (change)="updateSelectedAnswer($event, question)">
+        <mat-list>
+            <mat-list-item *ngFor="let option of question?.answers">
+                <mat-radio-button [value]="option.code">{{option.text}}</mat-radio-button>
+            </mat-list-item>
+        </mat-list>
+      </mat-radio-group>
+</ng-template>

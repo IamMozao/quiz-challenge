@@ -1,0 +1,120 @@
+{
+    "topicName": "Design Patters",
+    "questions": [
+        {
+            "headline": "Which of the below is not a valid design pattern?",
+            "questionCode": "DP/1",
+            "answers": [
+                {
+                    "code": "DP/1-1",
+                    "text": "Command"
+                },
+                {
+                    "code": "DP/1-2",
+                    "text": "Java"
+                },
+                {
+                    "code": "DP/1-3",
+                    "text": "Singleton"
+                },
+                {
+                    "code": "DP/1-4",
+                    "text": "Factory"
+                }
+            ],
+            "correctAnswerCode": "DP/1-2"
+        },
+        {
+            "headline": "Which of the below is not a valid classification of design pattern?",
+            "questionCode": "DP/2",
+            "answers": [
+                {
+                    "code": "DP/2-1",
+                    "text": "Structural patterns"
+                },
+                {
+                    "code": "DP/2-2",
+                    "text": "Java patterns"
+                },
+                {
+                    "code": "DP/2-3",
+                    "text": "Behavioural patterns"
+                },
+                {
+                    "code": "DP/2-4",
+                    "text": "Creational patterns"
+                }
+            ],
+            "correctAnswerCode": "DP/2-2"
+        },
+        {
+            "headline": "Which design pattern represents a way to access all the objects in a collection?",
+            "questionCode": "DP/3",
+            "answers": [
+                {
+                    "code": "DP/3-1",
+                    "text": "Bridge pattern"
+                },
+                {
+                    "code": "DP/3-2",
+                    "text": "Iterator pattern"
+                },
+                {
+                    "code": "DP/3-3",
+                    "text": "Facade pattern"
+                },
+                {
+                    "code": "DP/3-4",
+                    "text": "Builder pattern"
+                }
+            ],
+            "correctAnswerCode": "DP/3-2"
+        },
+        {
+            "headline": "What does MVC pattern stands for?",
+            "questionCode": "DP/4",
+            "answers": [
+                {
+                    "code": "DP/4-1",
+                    "text": "Model view Controller"
+                },
+                {
+                    "code": "DP/4-2",
+                    "text": "Model view Controller"
+                },
+                {
+                    "code": "DP/4-3",
+                    "text": "Model View Class"
+                },
+                {
+                    "code": "DP/4-4",
+                    "text": "Model view Controller"
+                }
+            ],
+            "correctAnswerCode": "DP/4-4"
+        },
+        {
+            "headline": "Which of the following describes the Builder pattern correctly?",
+            "questionCode": "DP/5",
+            "answers": [
+                {
+                    "code": "DP/5-1",
+                    "text": "This pattern builds a complex object using simple objects and using a step by step approach."
+                },
+                {
+                    "code": "DP/5-2",
+                    "text": "This pattern refers to creating duplicate object while keeping performance in mind."
+                },
+                {
+                    "code": "DP/5-3",
+                    "text": "This pattern is used when creation of object directly is costly."
+                },
+                {
+                    "code": "DP/5-4",
+                    "text": "This pattern is used when we need to decouple an abstraction from its implementation so that the two can vary independently."
+                }
+            ],
+            "correctAnswerCode": "DP/5-1"
+        }
+    ]
+}

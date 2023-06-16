@@ -1,0 +1,89 @@
+@use '@angular/material' as mat;
+
+$robin-egg-palette: (
+    50: #def6f5,
+    100: #ade9e4,
+    200: #71dbd2,
+    300: #00ccbe,
+    400: #00bfae,
+    500: #00b19e,
+    600: #00a38f,
+    700: #00927e,
+    800: #00826e,
+    900: #00644f,
+    contrast: (
+      50: #293333,
+      100: #293333,
+      200: #293333,
+      300: #293333,
+      400: #293333,
+      500: #293333,
+      600: #668080,
+      700: #668080,
+      800: #668080,
+      900: #668080,
+    )
+  );
+
+$sunburnt-cyclops-palette: (
+    50: #ffebf0,
+    100: #ffcdd6,
+    200: #f8999f,
+    300: #f26f79,
+    400: #ff4857,
+    500: #ff2d3c,
+    600: #f7213c,
+    700: #e51136,
+    800: #d8002e,
+    900: #c90022,
+    contrast: (
+        50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white,
+      )
+);
+
+$crimson-palette: (
+  50: #ffebef,
+  100: #ffcdc5,
+  200: #f0999f,
+  300: #e77179,
+  400: #f24e58,
+  500: #f83a40,
+  600: #e9313e,
+  700: #d72638,
+  800: #ca1e30,
+  900: #bb0d24,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+  )
+);
+
+$quiz-primary: mat.define-palette($robin-egg-palette, 300, 200, 600);
+$quiz-accent: mat.define-palette($sunburnt-cyclops-palette, 400, 200, 700);
+$quiz-warn: mat.define-palette($crimson-palette, 700);
+
+$quiz-theme: mat.define-light-theme((
+  color: (
+    primary: $quiz-primary,
+    accent: $quiz-accent,
+    warn: $quiz-warn,
+  )
+));
+@include mat.all-component-themes($quiz-theme);

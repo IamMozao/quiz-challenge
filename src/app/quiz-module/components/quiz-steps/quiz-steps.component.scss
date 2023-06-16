@@ -1,0 +1,13 @@
+.step-label{
+    white-space: break-spaces;
+}
+
+::ng-deep{
+    .mat-step-text-label{
+        white-space: break-spaces;
+    }
+    mat-vertical-stepper{
+        border-radius: 5px 30px;
+        padding: 1rem 0;
+    }
+}

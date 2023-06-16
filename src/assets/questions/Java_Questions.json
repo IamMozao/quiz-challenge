@@ -1,0 +1,89 @@
+{
+    "topicName":"Java",
+    "questions": [{
+        "headline": "Which of the following is not a keyword in java?",
+        "questionCode": "JV/1",
+        "answers": [{
+            "code": "JV/1-1",
+            "text": "static"
+        },{
+            "code": "JV/1-2",
+            "text": "Boolean"
+        },{
+            "code": "JV/1-3",
+            "text": "void"
+        },{
+            "code": "JV/1-4",
+            "text": "private"
+        }],
+        "correctAnswerCode": "JV/1-2"
+    },{
+        "headline": "What is the size of boolean variable?",
+        "questionCode": "JV/2",
+        "answers": [{
+            "code": "JV/2-1",
+            "text": "8 bit"
+        },{
+            "code": "JV/2-2",
+            "text": "16 bit"
+        },{
+            "code": "JV/2-3",
+            "text": "32 bit"
+        },{
+            "code": "JV/2-4",
+            "text": "not precisely defined"
+        }],
+        "correctAnswerCode": "JV/2-2"
+    },{
+        "headline": "What is JIT compiler?",
+        "questionCode": "JV/3",
+        "answers": [{
+            "code": "JV/3-1",
+            "text": "JIT improves the runtime performance of computer programs based on bytecode."
+        },{
+            "code": "JV/3-2",
+            "text": "JIT is an application development framework."
+        },{
+            "code": "JV/3-3",
+            "text": "JIT is an implementation of the Java Virtual Machine which executes Java programs."
+        },{
+            "code": "JV/3-4",
+            "text": "None of the above."
+        }],
+        "correctAnswerCode": "JV/3-1"
+    },{
+        "headline": "What is currentThread()?",
+        "questionCode": "JV/4",
+        "answers": [{
+            "code": "JV/4-1",
+            "text": "It is a Thread public static method used to obtain a reference to the current thread."
+        },{
+            "code": "JV/4-2",
+            "text": "It is a thread's instance method used to get thread count."
+        },{
+            "code": "JV/4-3",
+            "text": "It is a object's public static method used obtain a reference to the current thread."
+        },{
+            "code": "JV/4-4",
+            "text": "It is a object's instance method used to get thread count."
+        }],
+        "correctAnswerCode": "JV/4-1"
+    },{
+        "headline": "What is currentThread()?",
+        "questionCode": "JV/5",
+        "answers": [{
+            "code": "JV/5-1",
+            "text": "It is the process where one object acquires the properties of another."
+        },{
+            "code": "JV/5-2",
+            "text": "Inheritance is the ability of an object to take on many forms."
+        },{
+            "code": "JV/5-3",
+            "text": "Inheritance is a technique to define different methods of same type."
+        },{
+            "code": "JV/5-4",
+            "text": "None of the above."
+        }],
+        "correctAnswerCode": "JV/5-1"
+    }]
+}
